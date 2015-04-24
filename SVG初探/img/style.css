@@ -1,0 +1,18 @@
+.icon {
+	display: inline-block;
+	color: #444444;
+	fill: currentColor;
+	background-color: ;
+}
+.icon-home {
+	width: 32px;
+	height: 32px;
+}
+.icon-qrcode {
+	width: 32px;
+	height: 32px;
+}
+.icon-bubbles {
+	width: 36px;
+	height: 32px;
+}

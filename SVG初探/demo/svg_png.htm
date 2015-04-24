@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+	<title>SVG</title>
+<style>
+html{-webkit-text-size-adjust:none;}
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,b{font-style:normal;font-weight:normal;}
+ol,ul,li{list-style:none;}
+body{background-color:#fff;font-size:14px;font-family:Arial,Microsoft YaHei;}
+article,aside,footer,header,hgroup,nav,section,figure,figcaption {display:block;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+a em{text-decoration:underline;}
+a font{text-decoration:underline;}
+em{font-style:normal;}
+a{text-decoration:none;color:#3c3c3c;outline:0;}
+
+
+.item-list li::after{content:"\200B";display:block;height:0;clear:both;}
+
+.svg li::before{ background:url(../img/icon_color.svg) no-repeat; }
+.png li::before{ background:url(../img/icon.png) no-repeat; }
+
+.item-list{ width:50%; margin:100px auto;}
+.item-list li{font-size:20px;}
+.item-list li::before{float: left; display:block; content:""; margin:5px 5px 0 0; width:25px; height:25px;background-size:100px 100px;}
+
+.item-list .ico-wx::before{ background-position:0 0;}
+.item-list .ico-home::before{ background-position:-25px 0;}
+.item-list .ico-qr::before{ background-position:-50px 0;}
+
+.item-list .webicon{ float:left; margin:5px 5px 0 0; width:25px; height:25px;}
+
+.use li{color:#00f;}
+.use li::before{ display:none; }
+.use .webicon{fill: currentColor;}
+
+
+@media (-webkit-min-device-pixel-ratio:3){
+	.item-list li{ font-size:30px; margin-bottom:10px;}
+	.item-list li::before{margin:20px 20px 0 0;-webkit-transform: scaleX(3) scaleY(3);}
+}
+
+</style>
+</head>
+<body>
+<ul class="item-list svg">
+		<li class="ico-wx">wechat</li>
+		<li class="ico-home">home</li>
+		<li class="ico-qr">qr code</li>
+</ul>
+
+<ul class="item-list png">
+		<li class="ico-wx">wechat</li>
+		<li class="ico-home">home</li>
+		<li class="ico-qr">qr code</li>
+</ul>
+
+
+
+</body>
+</html>
